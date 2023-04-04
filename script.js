@@ -13,7 +13,7 @@ const field = document.querySelectorAll(".field");
         })
     })
 
-button.onclick = () => {
+button.onclick = (event) => {
     field.forEach(el => {
         if(el.required) {
         el.placeholder = "Обязательно*"
@@ -24,7 +24,8 @@ button.onclick = () => {
         el.style.borderBottomColor = "red";
     }
     })
-    if(!(/^[0-9]+$/.test(field[3].value))){
+    if(!(/^\+[0-9]+$/.test(field[3].value))){
         field[3].style.borderBottomColor = "red";
+        event.preventDefault();
     }
 }
