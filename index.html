@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Console Stuff</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="wrapper">
+   <div class="container">
+    <h2>Hello</h2>
+    <form class="main-form">
+        <div class="head-form">For business enquiries please use the form below</div>
+        <div class="substring required">
+            *Required
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                Name*
+            </div>
+            <input type="text" class="field" required>
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                Company*
+            </div>
+            <input type="text" class="field" required>
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                E-mail*
+            </div>
+            <input type="email" class="field" required>
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                Phone
+            </div>
+            <input type="tel" class="field" required>
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                Subject
+            </div>
+            <input type="text" class="field" required>
+        </div>
+        <div class="block-field">
+            <div class="substring signature">
+                Message*
+            </div>
+            <textarea class="field message" required></textarea>
+        </div>
+        <div class="agreement-block">
+            <input 
+            class="custom-checkbox"
+            id="myCheckbox" 
+            type="checkbox" required>
+            <label for="myCheckbox"></label>
+            <div>I accept <a href="https://github.com/AlexPopov0122">Terms and Privacy Policy</a></div>
+        </div>
+        <div class="send-button"><button class="button" type="submit">Send</button></div>
+    </form>
+   </div>
+</div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>

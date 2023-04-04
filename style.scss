@@ -1,0 +1,144 @@
+@import "resets/normalize";
+@import "resets/resetlocal";
+@import "resets/typography";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/cosmos.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.main-form {
+  width: 389px;
+  border-radius: 27px;
+  background-color: #171929;
+  box-shadow: 0px 0px 50px 0px #000000B2;
+  padding: 41px 45px;
+}
+
+.head-form {
+  font-size: 18px;
+  text-align: center;
+}
+
+.substring {
+  font-size: 15px;
+  font-weight: 300;
+  color: #797EA3;
+}
+
+.required {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.block-field {
+  margin-bottom: 38px;
+}
+
+.field {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3F4363;
+  margin-top: 7px;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: #fff;
+  }
+}
+
+.message {
+  resize: none;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+}
+
+.agreement-block {
+  display: flex;
+  font-size: 15px;
+  gap: 12px;
+  margin-bottom: 36px;
+  align-items: center;
+
+  div {
+    font-size: 15px;
+    font-weight: 300;
+    color: #797EA3;
+  }
+  a {
+    color: #B9BEE5;
+    text-decoration: underline;
+  }
+}
+.send-button {
+  text-align: center;
+
+  button {
+  padding: 13px 43px;
+  background-color: #2C2F47;
+  border-radius: 28px;
+}
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border: none;
+  background-color: #2C2F47;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
