@@ -418,8 +418,7 @@ h2 {
   border-bottom: 1px solid #3F4363;
   margin-top: 7px; }
   .field:focus {
-    outline: none;
-    border-bottom-color: #fff; }
+    outline: none; }
 
 .message {
   resize: none;
